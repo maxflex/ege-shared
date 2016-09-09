@@ -21,7 +21,7 @@ class Model extends \Illuminate\Database\Eloquent\Model
         $value = parent::getAttributeValue($key);
 
         if (in_array($key, $this->commaSeparated)) {
-            return static::getCommaSeparated($value);
+            return $this->getCommaSeparated($value);
         }
 
         return $value;
@@ -37,7 +37,7 @@ class Model extends \Illuminate\Database\Eloquent\Model
     public function setAttribute($key, $value)
     {
         if (in_array($key, $this->commaSeparated)) {
-            $this->attributes[$key] = static::setCommaSeparated($value);
+            return $this->setCommaSeparated($value);
         }
 
         return parent::setAttribute($key, $value);
@@ -56,7 +56,7 @@ class Model extends \Illuminate\Database\Eloquent\Model
             if (! array_key_exists($key, $attributes)) {
                 continue;
             }
-            $attributes[$key] = static::getCommaSeparated($attributes[$key]);
+            $attributes[$key] = $this->getCommaSeparated($attributes[$key]);
         }
 
         return $attributes;
@@ -65,7 +65,7 @@ class Model extends \Illuminate\Database\Eloquent\Model
     /**
      * Get comma-separated attribute
      */
-    private static function getCommaSeparated($value)
+    private function getCommaSeparated($value)
     {
         if (is_array($value)) {
             return $value;
@@ -77,12 +77,13 @@ class Model extends \Illuminate\Database\Eloquent\Model
     /**
      * Set comma-separated attribute
      */
-    private static function setCommaSeparated($value)
+    private function setCommaSeparated($value)
     {
         if (is_array($value)) {
-            return implode(',', $value);
+            $this->attributes[$key] = implode(',', $value);
         } else {
-            return $value;
+            $this->attributes[$key] = $value;
         }
+        return $this;
     }
 }
