@@ -1,5 +1,7 @@
 <?php
 
+namespace Shared;
+
 class Model extends \Illuminate\Database\Eloquent\Model
 {
     /**
