@@ -37,7 +37,7 @@ class Model extends \Illuminate\Database\Eloquent\Model
     public function setAttribute($key, $value)
     {
         if (in_array($key, $this->commaSeparated)) {
-            return $this->setCommaSeparated($value);
+            return $this->setCommaSeparated($key, $value);
         }
 
         return parent::setAttribute($key, $value);
@@ -77,7 +77,7 @@ class Model extends \Illuminate\Database\Eloquent\Model
     /**
      * Set comma-separated attribute
      */
-    private function setCommaSeparated($value)
+    private function setCommaSeparated($key, $value)
     {
         if (is_array($value)) {
             $this->attributes[$key] = implode(',', $value);
