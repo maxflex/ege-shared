@@ -79,6 +79,7 @@ class Model extends \Illuminate\Database\Eloquent\Model
      */
     private function setCommaSeparated($value)
     {
+        // test
         if (is_array($value)) {
             $this->attributes[$key] = implode(',', $value);
         } else {
