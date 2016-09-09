@@ -1,5 +1,6 @@
 {
    "name":"ege-shared",
+   "minimum-stability": "dev",
    "autoload":{
       "psr-4":{
          "EgeShared\\":""
