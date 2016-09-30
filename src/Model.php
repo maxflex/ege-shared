@@ -86,4 +86,13 @@ class Model extends \Illuminate\Database\Eloquent\Model
         }
         return $this;
     }
+
+    /**
+     * Get a clean attribute, avoiding accessors/getters
+     *
+     */
+    public function getClean($key)
+    {
+        return $this->getAttributes()[$key];
+    }
 }
