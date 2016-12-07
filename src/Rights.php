@@ -2,7 +2,7 @@
 
 namespace Shared;
 
-class UserRights
+class Rights
 {
     const SHOW_CONTRACT = 1;
 }
