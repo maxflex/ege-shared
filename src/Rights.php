@@ -17,9 +17,10 @@ class Rights
     const EDIT_PAYMENTS         = 11;
 
     const IS_DEVELOPER          = 12;
+
     const PHONE_NOTIFICATIONS   = 29;
 
-    const ER_REQUEST_DATA       = 13;
+    const ER_DELETE_REQUESTS    = 13;
     const ER_DELETE_TUTOR       = 14;
     const ER_MERGE_TUTOR        = 15;
     const ER_TUTOR_ACCOUNTS     = 16;
@@ -35,6 +36,21 @@ class Rights
     const ER_TUTOR_STATUSES     = 26;
     const ER_REQUEST_STATUSES   = 27;
     const ER_ACCEPT_ACCOUNTS    = 28;
+    const ER_SUMMARY_FIELDS     = 29;
+    const ER_DELETE_LISTS       = 30;
+    const ER_DELETE_ATTACHMENTS = 31;
+    const ER_DELETE_ARCHIVES    = 32;
+    const ER_DELETE_REVIEWS     = 33;
+
+    const EC_BANNED             = 34;
+    const ER_BANNED             = 35;
+    const ERC_BANNED            = 36;
+
+    const WORLDWIDE_ACCESS      = 37;
+
+    const SHOW_SALARY           = 38;
+    const IS_SUPERUSER          = 39;
+    const EDIT_CONTRACT         = 40;
 
     static $all = [
         self::SHOW_CONTRACT         => 'договор',
