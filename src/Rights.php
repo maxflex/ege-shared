@@ -89,7 +89,7 @@ class Rights
         self::ER_DELETE_REVIEWS     => 'удаление отзывов',
         self::EC_BANNED             => 'заблокирован в ЕГЭ-Центре',
         self::ER_BANNED             => 'заблокирован в ЕГЭ-Репетиторе',
-        self::ERC_BANNED            => 'заблокирован в ЕГЭ-Репетитора',
+        self::ERC_BANNED            => 'заблокирован в CRM ЕГЭ-Репетитора',
         self::WORLDWIDE_ACCESS      => 'доступ отовсюду',
         self::SHOW_SALARY           => 'показать зарплату',
         self::EDIT_CONTRACT         => 'редактировать договор',
