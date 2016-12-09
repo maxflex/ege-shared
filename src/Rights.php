@@ -18,8 +18,6 @@ class Rights
 
     const IS_DEVELOPER          = 12;
 
-    const PHONE_NOTIFICATIONS   = 29;
-
     const ER_DELETE_REQUESTS    = 13;
     const ER_DELETE_TUTOR       = 14;
     const ER_MERGE_TUTOR        = 15;
@@ -51,6 +49,7 @@ class Rights
     const SHOW_SALARY           = 38;
     const IS_SUPERUSER          = 39;
     const EDIT_CONTRACT         = 40;
+    const PHONE_NOTIFICATIONS   = 41;
 
     static $all = [
         self::SHOW_CONTRACT         => 'договор',
