@@ -66,7 +66,7 @@ class Rights
         self::EDIT_PAYMENTS         => 'редактирование платежей',
         self::IS_DEVELOPER          => 'разработчик',
         self::PHONE_NOTIFICATIONS   => 'уведомления о звонках',
-        self::ER_DELETE_REQUESTS       => 'редактирование клиентов',
+        self::ER_DELETE_REQUESTS    => 'удаление заявок',
         self::ER_DELETE_TUTOR       => 'удаление преподавателей',
         self::ER_MERGE_TUTOR        => 'склейка преподавателей',
         self::ER_TUTOR_ACCOUNTS     => 'отчетность',
