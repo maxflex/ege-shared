@@ -52,6 +52,7 @@ class Rights
     const PHONE_NOTIFICATIONS      = 41;
 
     const ER_ATTACHMENT_VISIBILITY = 42;
+    const ER_STREAM                = 43;
 
     static $all = [
         self::SHOW_CONTRACT            => 'договор',
@@ -95,5 +96,6 @@ class Rights
         self::WORLDWIDE_ACCESS         => 'доступ отовсюду',
         self::SHOW_SALARY              => 'показать зарплату',
         self::EDIT_CONTRACT            => 'редактировать договор',
+        self::ER_STREAM                => 'стрим',
     ];
 }
