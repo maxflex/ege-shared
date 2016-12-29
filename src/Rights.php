@@ -53,6 +53,7 @@ class Rights
 
     const ER_ATTACHMENT_VISIBILITY = 42;
     const ER_STREAM                = 43;
+    const ER_TEMPLATES             = 44;
 
     static $all = [
         self::SHOW_CONTRACT            => 'договор',
@@ -97,5 +98,6 @@ class Rights
         self::SHOW_SALARY              => 'показать зарплату',
         self::EDIT_CONTRACT            => 'редактировать договор',
         self::ER_STREAM                => 'стрим',
+        self::ER_TEMPLATES             => 'шаблоны',
     ];
 }
