@@ -62,15 +62,24 @@ class Model extends \Illuminate\Database\Eloquent\Model
         return $attributes;
     }
 
-    /**
-     * Get comma-separated attribute
-     */
+     /**
+      * Get comma-separated attribute
+      */
     private function getCommaSeparated($value)
     {
         if (is_array($value)) {
             return $value;
         } else {
-            return empty($value) ? [] : array_map('intval', explode(',', $value));
+            if (empty($value)) {
+                return [];
+            } else {
+                $values = explode(',', $value);
+                // intval не нужно применять, если хранятся строки (test1,test2,test3)
+                if (is_numeric($values[0])) {
+                    $values = array_map('intval', $values);
+                }
+                return $values;
+            }
         }
     }
 
