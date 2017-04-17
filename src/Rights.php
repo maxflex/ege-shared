@@ -107,7 +107,7 @@ class Rights
         self::ER_SUMMARY_USERS_ALL     => 'просмотр эффективности по всем пользователям',
         self::EDIT_GROUP_SCHEDULE      => 'редактирование расписания выбранной группы',
         self::LOGS                     => 'история действий',
-        self::ER_EDIT_PAYMENTS         => 'редактирование платежей',
+        self::ER_EDIT_PAYMENTS         => 'подтверждение платежей',
     ];
 
     static $groups = [
