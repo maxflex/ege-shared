@@ -58,6 +58,8 @@ class Rights
     const EDIT_GROUP_SCHEDULE      = 46;
     const LOGS                     = 47;
 
+    const ER_EDIT_PAYMENTS         = 48;
+
     static $all = [
         self::SHOW_CONTRACT            => 'показать договор',
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
@@ -105,6 +107,7 @@ class Rights
         self::ER_SUMMARY_USERS_ALL     => 'просмотр эффективности по всем пользователям',
         self::EDIT_GROUP_SCHEDULE      => 'редактирование расписания выбранной группы',
         self::LOGS                     => 'история действий',
+        self::ER_EDIT_PAYMENTS         => 'редактирование платежей',
     ];
 
     static $groups = [
@@ -150,6 +153,7 @@ class Rights
             self::ER_STREAM,
             self::ER_TEMPLATES,
             self::EDIT_CONTRACT,
+            self::ER_EDIT_PAYMENTS
         ],
         'COMMON' => [
             self::PHONE_NOTIFICATIONS,
