@@ -59,6 +59,7 @@ class Rights
     const LOGS                     = 47;
 
     const ER_EDIT_PAYMENTS         = 48;
+    const ECC_BANNED               = 49;
 
     static $all = [
         self::SHOW_CONTRACT            => 'показать договор',
@@ -96,9 +97,10 @@ class Rights
         self::ER_REQUEST_STATUSES      => 'подтверждение обоснованного отказа',
         self::ER_ACCEPT_ACCOUNTS       => 'назначение встреч',
         self::ER_SUMMARY_FIELDS        => 'финансовые сводки на странице "итоги"',
-        self::EC_BANNED                => 'блокировка в NEC',
-        self::ER_BANNED                => 'блокировка в NER',
-        self::ERC_BANNED               => 'блокировка в NER-CMS',
+        self::EC_BANNED                => 'блокировка в EC',
+        self::ER_BANNED                => 'блокировка в ER',
+        self::ECC_BANNED               => 'блокировка в EC-CMS',
+        self::ERC_BANNED               => 'блокировка в ER-CMS',
         self::WORLDWIDE_ACCESS         => 'доступ за пределами офиса',
         self::SHOW_SALARY              => 'показать зарплату',
         self::EDIT_CONTRACT            => 'редактировать договор',
@@ -161,6 +163,7 @@ class Rights
             self::SHOW_CONTRACT,
             self::EC_BANNED,
             self::ER_BANNED,
+            self::ECC_BANNED,
             self::ERC_BANNED,
             self::WORLDWIDE_ACCESS,
         ],
