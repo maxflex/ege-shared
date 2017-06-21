@@ -112,7 +112,7 @@ class Rights
         self::EDIT_GROUP_SCHEDULE      => 'редактирование расписания выбранной группы',
         self::LOGS                     => 'история действий',
         self::ER_EDIT_PAYMENTS         => 'подтверждение платежей',
-        self::ER_REQUEST_ERRORS        => '«ошибки» заявок',
+        self::ER_REQUEST_ERRORS        => 'ошибки в заявках',
     ];
 
     static $groups = [
