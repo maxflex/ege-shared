@@ -61,6 +61,8 @@ class Rights
     const ER_EDIT_PAYMENTS         = 48;
     const ECC_BANNED               = 49;
 
+    const ER_REQUEST_ERRORS        = 50;
+
     static $all = [
         self::SHOW_CONTRACT            => 'показать договор',
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
@@ -110,6 +112,7 @@ class Rights
         self::EDIT_GROUP_SCHEDULE      => 'редактирование расписания выбранной группы',
         self::LOGS                     => 'история действий',
         self::ER_EDIT_PAYMENTS         => 'подтверждение платежей',
+        self::ER_REQUEST_ERRORS        => '«ошибки» заявок',
     ];
 
     static $groups = [
@@ -155,7 +158,8 @@ class Rights
             self::ER_STREAM,
             self::ER_TEMPLATES,
             self::EDIT_CONTRACT,
-            self::ER_EDIT_PAYMENTS
+            self::ER_EDIT_PAYMENTS,
+            self::ER_REQUEST_ERRORS
         ],
         'COMMON' => [
             self::PHONE_NOTIFICATIONS,
