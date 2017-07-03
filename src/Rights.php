@@ -63,6 +63,8 @@ class Rights
 
     const ER_REQUEST_ERRORS        = 50;
 
+    const EMERGENCY_EXIT           = 51;
+
     static $all = [
         self::SHOW_CONTRACT            => 'показать договор',
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
@@ -113,6 +115,7 @@ class Rights
         self::LOGS                     => 'история действий',
         self::ER_EDIT_PAYMENTS         => 'подтверждение платежей',
         self::ER_REQUEST_ERRORS        => 'ошибки в заявках',
+        self::EMERGENCY_EXIT           => 'экстренный выход',
     ];
 
     static $groups = [
@@ -170,6 +173,7 @@ class Rights
             self::ECC_BANNED,
             self::ERC_BANNED,
             self::WORLDWIDE_ACCESS,
+            self::EMERGENCY_EXIT,
         ],
     ];
 }
