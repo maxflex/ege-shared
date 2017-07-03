@@ -64,6 +64,7 @@ class Rights
     const ER_REQUEST_ERRORS        = 50;
 
     const EMERGENCY_EXIT           = 51;
+    const EC_STREAM                = 52;
 
     static $all = [
         self::SHOW_CONTRACT            => 'показать договор',
@@ -116,6 +117,7 @@ class Rights
         self::ER_EDIT_PAYMENTS         => 'подтверждение платежей',
         self::ER_REQUEST_ERRORS        => 'ошибки в заявках',
         self::EMERGENCY_EXIT           => 'экстренный выход',
+        self::EC_STREAM                => 'страница "стрим"',
     ];
 
     static $groups = [
@@ -133,6 +135,7 @@ class Rights
             self::SHOW_STATS,
             self::SHOW_SALARY,
             self::LOGS,
+            self::EC_STREAM,
         ],
         'EGEREP' => [
             self::ER_DELETE_REQUESTS,
