@@ -66,6 +66,8 @@ class Rights
     const EMERGENCY_EXIT           = 51;
     const EC_STREAM                = 52;
 
+    const ER_ATTENDANCE            = 53;
+
     static $all = [
         self::SHOW_CONTRACT            => 'показать договор',
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
@@ -118,6 +120,7 @@ class Rights
         self::ER_REQUEST_ERRORS        => 'ошибки в заявках',
         self::EMERGENCY_EXIT           => 'экстренный выход',
         self::EC_STREAM                => 'страница "стрим"',
+        self::ER_ATTENDANCE            => 'страница "посещаемость"',
     ];
 
     static $groups = [
@@ -165,7 +168,8 @@ class Rights
             self::ER_TEMPLATES,
             self::EDIT_CONTRACT,
             self::ER_EDIT_PAYMENTS,
-            self::ER_REQUEST_ERRORS
+            self::ER_REQUEST_ERRORS,
+            self::ER_ATTENDANCE
         ],
         'COMMON' => [
             self::PHONE_NOTIFICATIONS,
