@@ -121,6 +121,7 @@ class Rights
         self::EMERGENCY_EXIT           => 'экстренный выход',
         self::EC_STREAM                => 'страница "стрим"',
         self::ER_ATTENDANCE            => 'страница "посещаемость"',
+        self::ER_ACTIVITY              => 'страница "активность"',
     ];
 
     static $groups = [
@@ -169,7 +170,8 @@ class Rights
             self::EDIT_CONTRACT,
             self::ER_EDIT_PAYMENTS,
             self::ER_REQUEST_ERRORS,
-            self::ER_ATTENDANCE
+            self::ER_ATTENDANCE,
+            self::ER_ACTIVITY,
         ],
         'COMMON' => [
             self::PHONE_NOTIFICATIONS,
