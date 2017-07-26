@@ -67,6 +67,7 @@ class Rights
     const EC_STREAM                = 52;
 
     const ER_ATTENDANCE            = 53;
+    const ER_ACTIVITY              = 54;
 
     static $all = [
         self::SHOW_CONTRACT            => 'показать договор',
