@@ -68,6 +68,7 @@ class Rights
 
     const ER_ATTENDANCE            = 53;
     const ER_ACTIVITY              = 54;
+    const EC_ACTIVITY              = 55;
 
     static $all = [
         self::SHOW_CONTRACT            => 'показать договор',
@@ -123,6 +124,7 @@ class Rights
         self::EC_STREAM                => 'страница "стрим"',
         self::ER_ATTENDANCE            => 'страница "посещаемость"',
         self::ER_ACTIVITY              => 'страница "активность"',
+        self::EC_ACTIVITY              => 'страница "активность"',
     ];
 
     static $groups = [
@@ -141,6 +143,7 @@ class Rights
             self::SHOW_SALARY,
             self::LOGS,
             self::EC_STREAM,
+            self::EC_ACTIVITY,
         ],
         'EGEREP' => [
             self::ER_DELETE_REQUESTS,
