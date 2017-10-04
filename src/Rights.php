@@ -69,6 +69,7 @@ class Rights
     const ER_ATTENDANCE            = 53;
     const ER_ACTIVITY              = 54;
     const EC_ACTIVITY              = 55;
+    const EC_EDIT_GROUP_CONTRACT   = 56;
 
     static $all = [
         self::SHOW_CONTRACT            => 'показать договор',
@@ -125,6 +126,7 @@ class Rights
         self::ER_ATTENDANCE            => 'страница "посещаемость"',
         self::ER_ACTIVITY              => 'страница "активность"',
         self::EC_ACTIVITY              => 'страница "активность"',
+        self::EC_EDIT_GROUP_CONTRACT   => '"договор подписан" в группе',
     ];
 
     static $groups = [
@@ -132,6 +134,7 @@ class Rights
             self::EDIT_GROUPS,
             self::EDIT_GROUP_SCHEDULE,
             self::EDIT_PAYMENTS,
+            self::EC_EDIT_GROUP_CONTRACT,
             self::SHOW_TASKS,
             self::SHOW_CALENDAR,
             self::SHOW_FAQ,
