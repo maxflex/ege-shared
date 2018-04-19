@@ -70,6 +70,7 @@ class Rights
     const ER_ACTIVITY              = 54;
     const EC_ACTIVITY              = 55;
     const EC_EDIT_GROUP_CONTRACT   = 56;
+    const ER_APPROVE_BACKGROUND    = 57;
 
     static $all = [
         self::SHOW_CONTRACT            => 'показать договор',
@@ -127,6 +128,7 @@ class Rights
         self::ER_ACTIVITY              => 'страница "активность"',
         self::EC_ACTIVITY              => 'страница "активность"',
         self::EC_EDIT_GROUP_CONTRACT   => '"договор подписан" в группе',
+        self::ER_APPROVE_BACKGROUND    => 'одобрение фонов',
     ];
 
     static $groups = [
@@ -179,6 +181,7 @@ class Rights
             self::ER_REQUEST_ERRORS,
             self::ER_ATTENDANCE,
             self::ER_ACTIVITY,
+            self::ER_APPROVE_BACKGROUND,
         ],
         'COMMON' => [
             self::PHONE_NOTIFICATIONS,
