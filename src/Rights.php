@@ -4,7 +4,7 @@ namespace Shared;
 
 class Rights
 {
-    const SHOW_CONTRACT            = 1;
+    // const SHOW_CONTRACT            = 1;
     const EDIT_GROUPS              = 2;
     const SHOW_TASKS               = 3;
     const SHOW_CALENDAR            = 4;
@@ -73,7 +73,7 @@ class Rights
     const ER_APPROVE_BACKGROUND    = 57;
 
     static $all = [
-        self::SHOW_CONTRACT            => 'показать договор',
+        // self::SHOW_CONTRACT            => 'показать договор',
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
         self::SHOW_TASKS               => 'страница "задачи"',
         self::SHOW_CALENDAR            => 'страница "календарь"',
@@ -186,7 +186,7 @@ class Rights
         'COMMON' => [
             self::PHONE_NOTIFICATIONS,
             self::IS_DEVELOPER,
-            self::SHOW_CONTRACT,
+            // self::SHOW_CONTRACT,
             self::EC_BANNED,
             self::ER_BANNED,
             self::ECC_BANNED,
