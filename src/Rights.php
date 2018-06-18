@@ -4,7 +4,6 @@ namespace Shared;
 
 class Rights
 {
-    // const SHOW_CONTRACT            = 1;
     const EDIT_GROUPS              = 2;
     const SHOW_TASKS               = 3;
     const SHOW_CALENDAR            = 4;
@@ -48,7 +47,6 @@ class Rights
 
     const SHOW_SALARY              = 38;
     const IS_SUPERUSER             = 39;
-    // const EDIT_CONTRACT            = 40;
     const PHONE_NOTIFICATIONS      = 41;
 
     const ER_ATTACHMENT_VISIBILITY = 42;
@@ -72,8 +70,9 @@ class Rights
     const EC_EDIT_GROUP_CONTRACT   = 56;
     const ER_APPROVE_BACKGROUND    = 57;
 
+    const SECRET_SMS               = 58;
+
     static $all = [
-        // self::SHOW_CONTRACT            => 'показать договор',
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
         self::SHOW_TASKS               => 'страница "задачи"',
         self::SHOW_CALENDAR            => 'страница "календарь"',
@@ -114,7 +113,6 @@ class Rights
         self::ERC_BANNED               => 'блокировка в ER-CMS',
         self::WORLDWIDE_ACCESS         => 'доступ за пределами офиса',
         self::SHOW_SALARY              => 'показать зарплату',
-        // self::EDIT_CONTRACT            => 'редактировать договор',
         self::ER_STREAM                => 'страница "стрим"',
         self::ER_TEMPLATES             => 'страница "шаблоны"',
         self::ER_SUMMARY_USERS_ALL     => 'просмотр эффективности по всем пользователям',
@@ -129,6 +127,7 @@ class Rights
         self::EC_ACTIVITY              => 'страница "активность"',
         self::EC_EDIT_GROUP_CONTRACT   => '"договор подписан" в группе',
         self::ER_APPROVE_BACKGROUND    => 'одобрение фонов',
+        self::SECRET_SMS               => 'просмотр секретных СМС',
     ];
 
     static $groups = [
@@ -176,17 +175,16 @@ class Rights
             self::ER_ACCEPT_ACCOUNTS,
             self::ER_STREAM,
             self::ER_TEMPLATES,
-            // self::EDIT_CONTRACT,
             self::ER_EDIT_PAYMENTS,
             self::ER_REQUEST_ERRORS,
             self::ER_ATTENDANCE,
             self::ER_ACTIVITY,
             self::ER_APPROVE_BACKGROUND,
+            self::SECRET_SMS,
         ],
         'COMMON' => [
             self::PHONE_NOTIFICATIONS,
             self::IS_DEVELOPER,
-            // self::SHOW_CONTRACT,
             self::EC_BANNED,
             self::ER_BANNED,
             self::ECC_BANNED,
