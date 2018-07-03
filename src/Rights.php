@@ -72,6 +72,8 @@ class Rights
 
     const SECRET_SMS               = 58;
 
+    const EC_CALLS_RATING          = 59;
+
     static $all = [
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
         self::SHOW_TASKS               => 'страница "задачи"',
@@ -128,6 +130,8 @@ class Rights
         self::EC_EDIT_GROUP_CONTRACT   => '"договор подписан" в группе',
         self::ER_APPROVE_BACKGROUND    => 'одобрение фонов',
         self::SECRET_SMS               => 'просмотр секретных СМС',
+
+        self::EC_CALLS_RATING          => 'страница "оценка качества обслуживания"',
     ];
 
     static $groups = [
@@ -148,6 +152,7 @@ class Rights
             self::LOGS,
             self::EC_STREAM,
             self::EC_ACTIVITY,
+            self::EC_CALLS_RATING,
         ],
         'EGEREP' => [
             self::ER_DELETE_REQUESTS,
