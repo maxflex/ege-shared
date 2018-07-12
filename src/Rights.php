@@ -132,6 +132,8 @@ class Rights
         self::SECRET_SMS               => 'просмотр секретных СМС',
 
         self::EC_CALLS_RATING          => 'страница "оценка качества обслуживания"',
+
+        self::WSTAT_BANNED             => 'заблокирован в WSTAT',
     ];
 
     static $groups = [
@@ -194,6 +196,7 @@ class Rights
             self::ER_BANNED,
             self::ECC_BANNED,
             self::ERC_BANNED,
+            self::WSTAT_BANNED,
             self::WORLDWIDE_ACCESS,
             self::EMERGENCY_EXIT,
         ],
