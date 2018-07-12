@@ -74,6 +74,8 @@ class Rights
 
     const EC_CALLS_RATING          = 59;
 
+    const WSTAT_BANNED             = 60;
+
     static $all = [
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
         self::SHOW_TASKS               => 'страница "задачи"',
