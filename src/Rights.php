@@ -135,7 +135,7 @@ class Rights
 
         self::EC_CALLS_RATING          => 'страница "оценка качества обслуживания"',
 
-        self::WSTAT_BANNED             => 'заблокирован в WSTAT',
+        self::WSTAT_BANNED             => 'блокировка в WSTAT',
     ];
 
     static $groups = [
