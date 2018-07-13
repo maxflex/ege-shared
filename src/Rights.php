@@ -43,8 +43,6 @@ class Rights
     const ER_BANNED                = 35;
     const ERC_BANNED               = 36;
 
-    const WORLDWIDE_ACCESS         = 37;
-
     const SHOW_SALARY              = 38;
     const IS_SUPERUSER             = 39;
     const PHONE_NOTIFICATIONS      = 41;
@@ -75,6 +73,8 @@ class Rights
     const EC_CALLS_RATING          = 59;
 
     const WSTAT_BANNED             = 60;
+
+    const EDIT_IPS                 = 61;
 
     static $all = [
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
@@ -115,7 +115,6 @@ class Rights
         self::ER_BANNED                => 'блокировка в ER',
         self::ECC_BANNED               => 'блокировка в EC-CMS',
         self::ERC_BANNED               => 'блокировка в ER-CMS',
-        self::WORLDWIDE_ACCESS         => 'доступ за пределами офиса',
         self::SHOW_SALARY              => 'показать зарплату',
         self::ER_STREAM                => 'страница "стрим"',
         self::ER_TEMPLATES             => 'страница "шаблоны"',
@@ -199,7 +198,6 @@ class Rights
             self::ECC_BANNED,
             self::ERC_BANNED,
             self::WSTAT_BANNED,
-            self::WORLDWIDE_ACCESS,
             self::EMERGENCY_EXIT,
         ],
     ];
