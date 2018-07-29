@@ -76,6 +76,10 @@ class Rights
 
     const EDIT_IPS                 = 61;
 
+    const ER_PAYSTREAM             = 62;
+
+    const IS_SUPERUSER             = 9999;
+
     static $all = [
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
         self::SHOW_TASKS               => 'страница "задачи"',
@@ -131,10 +135,10 @@ class Rights
         self::EC_EDIT_GROUP_CONTRACT   => '"договор подписан" в группе',
         self::ER_APPROVE_BACKGROUND    => 'одобрение фонов',
         self::SECRET_SMS               => 'просмотр секретных СМС',
-
         self::EC_CALLS_RATING          => 'страница "оценка качества обслуживания"',
-
         self::WSTAT_BANNED             => 'блокировка в WSTAT',
+        self::ER_PAYSTREAM             => 'стрим платежей',
+        self::IS_SUPERUSER             => 'суперпользователь',
     ];
 
     static $groups = [
@@ -189,6 +193,7 @@ class Rights
             self::ER_ACTIVITY,
             self::ER_APPROVE_BACKGROUND,
             self::SECRET_SMS,
+            self::ER_PAYSTREAM,
         ],
         'COMMON' => [
             self::PHONE_NOTIFICATIONS,
@@ -199,6 +204,7 @@ class Rights
             self::ERC_BANNED,
             self::WSTAT_BANNED,
             self::EMERGENCY_EXIT,
+            self::IS_SUPERUSER,
         ],
     ];
 }
