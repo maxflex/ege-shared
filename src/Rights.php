@@ -138,6 +138,7 @@ class Rights
         self::WSTAT_BANNED             => 'блокировка в WSTAT',
         self::ER_PAYSTREAM             => 'стрим платежей',
         self::IS_SUPERUSER             => 'суперпользователь',
+        self::EDIT_IPS                 => 'управление IP адресами',
     ];
 
     static $groups = [
@@ -158,7 +159,7 @@ class Rights
             self::LOGS,
             self::EC_STREAM,
             self::EC_ACTIVITY,
-            self::EC_CALLS_RATING,
+            self::EC_CALLS_RATING
         ],
         'EGEREP' => [
             self::ER_DELETE_REQUESTS,
@@ -203,6 +204,7 @@ class Rights
             self::ERC_BANNED,
             self::WSTAT_BANNED,
             self::EMERGENCY_EXIT,
+            self::EDIT_IPS,
             self::IS_SUPERUSER,
         ],
     ];
