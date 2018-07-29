@@ -44,7 +44,6 @@ class Rights
     const ERC_BANNED               = 36;
 
     const SHOW_SALARY              = 38;
-    const IS_SUPERUSER             = 39;
     const PHONE_NOTIFICATIONS      = 41;
 
     const ER_ATTACHMENT_VISIBILITY = 42;
