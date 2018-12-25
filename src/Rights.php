@@ -79,6 +79,9 @@ class Rights
 
     const IS_SUPERUSER             = 9999;
 
+    // LK2
+    const LK2_HAS_ACCESS = 100;
+
     static $all = [
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
         self::SHOW_TASKS               => 'страница "задачи"',
@@ -139,6 +142,8 @@ class Rights
         self::ER_PAYSTREAM             => 'стрим платежей',
         self::IS_SUPERUSER             => 'суперпользователь',
         self::EDIT_IPS                 => 'управление IP адресами',
+
+        self::LK2_HAS_ACCESS => 'имеет доступ к системе ЕГЭ-Центра',
     ];
 
     static $groups = [
@@ -206,6 +211,9 @@ class Rights
             self::EMERGENCY_EXIT,
             self::EDIT_IPS,
             self::IS_SUPERUSER,
+        ],
+        'LK2' => [
+            self::LK2_HAS_ACCESS,
         ],
     ];
 }
