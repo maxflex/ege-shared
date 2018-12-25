@@ -143,7 +143,7 @@ class Rights
         self::IS_SUPERUSER             => 'суперпользователь',
         self::EDIT_IPS                 => 'управление IP адресами',
 
-        self::LK2_HAS_ACCESS => 'имеет доступ к системе ЕГЭ-Центра',
+        self::LK2_HAS_ACCESS => 'имеет доступ к системе',
     ];
 
     static $groups = [
