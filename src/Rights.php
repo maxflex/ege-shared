@@ -80,7 +80,8 @@ class Rights
     const IS_SUPERUSER             = 9999;
 
     // LK2
-    const LK2_HAS_ACCESS = 100;
+    const LK2_BANNED = 100;
+    const LK2_CRITICAL_PARTS = 101;
 
     static $all = [
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
@@ -203,17 +204,18 @@ class Rights
         'COMMON' => [
             self::PHONE_NOTIFICATIONS,
             self::IS_DEVELOPER,
-            self::EC_BANNED,
+            self::LK2_BANNED,
             self::ER_BANNED,
             self::ECC_BANNED,
             self::ERC_BANNED,
+            self::LK2_HAS_ACCESS,
             self::WSTAT_BANNED,
             self::EMERGENCY_EXIT,
             self::EDIT_IPS,
             self::IS_SUPERUSER,
         ],
         'LK2' => [
-            self::LK2_HAS_ACCESS,
+            self::LK2_CRITICAL_PARTS,
         ],
     ];
 }
