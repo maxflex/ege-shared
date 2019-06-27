@@ -144,7 +144,8 @@ class Rights
         self::IS_SUPERUSER             => 'суперпользователь',
         self::EDIT_IPS                 => 'управление IP адресами',
 
-        self::LK2_HAS_ACCESS => 'имеет доступ к системе',
+        self::LK2_BANNED               => 'блокировка в EC',
+        self::LK2_CRITICAL_PARTS       => 'критические данные',
     ];
 
     static $groups = [
@@ -208,7 +209,6 @@ class Rights
             self::ER_BANNED,
             self::ECC_BANNED,
             self::ERC_BANNED,
-            self::LK2_HAS_ACCESS,
             self::WSTAT_BANNED,
             self::EMERGENCY_EXIT,
             self::EDIT_IPS,
