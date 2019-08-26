@@ -81,7 +81,32 @@ class Rights
 
     // LK2
     const LK2_BANNED = 100;
-    const LK2_CRITICAL_PARTS = 101;
+    const LK2_REQUESTS = 102;
+    const LK2_CLIENTS = 103;
+    const LK2_GROUPS = 104;
+    const LK2_ABSTRACT_GROUPS = 105;
+    const LK2_PAYMENTS = 106;
+    const LK2_TEACHERS = 107;
+    const LK2_TESTS = 108;
+    const LK2_TESTS_CLIENTS = 109;
+    const LK2_CONTRACTS = 111;
+    const LK2_VISITS = 112;
+    const LK2_REVIEWS = 113;
+    const LK2_REPORTS = 114;
+    const LK2_STATS = 115;
+    const LK2_STATS_PAYMENTS = 116;
+    const LK2_DATES_AND_PRICES = 118;
+    const LK2_SMS_TEMPLATES = 119;
+    const LK2_LOGS = 120;
+    const LK2_MACROS = 121;
+    const LK2_ADMINS = 122;
+    const LK2_TASKS = 123;
+    const LK2_CONFIRM_PAYMENTS = 124;
+    const LK2_MANGO = 125;
+    const LK2_EDIT_ADMIN_PHONES = 125;
+    const LK2_EDIT_ADMIN_EMAILS = 126;
+    const LK2_EDIT_ADMIN_IPS = 127;
+    const LK2_VIEW_LOG_IPS = 128;
 
     static $all = [
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
@@ -145,7 +170,32 @@ class Rights
         self::EDIT_IPS                 => 'управление IP адресами',
 
         self::LK2_BANNED               => 'блокировка в EC',
-        self::LK2_CRITICAL_PARTS       => 'критические данные',
+        self::LK2_REQUESTS => 'Заявки',
+        self::LK2_CLIENTS => 'Клиенты',
+        self::LK2_GROUPS => 'Группы',
+        self::LK2_ABSTRACT_GROUPS => 'Болота',
+        self::LK2_PAYMENTS => 'Платежи',
+        self::LK2_TEACHERS => 'Преподаватели',
+        self::LK2_TESTS => 'Тесты',
+        self::LK2_TESTS_CLIENTS => 'Назначенные тесты',
+        self::LK2_CONTRACTS => 'Договоры',
+        self::LK2_VISITS => 'Посещаемость',
+        self::LK2_REVIEWS => 'Отзывы',
+        self::LK2_REPORTS => 'Отчёты',
+        self::LK2_STATS => 'Итоги',
+        self::LK2_STATS_PAYMENTS => 'Итоги по платежам',
+        self::LK2_DATES_AND_PRICES => 'Экзамены и цены',
+        self::LK2_SMS_TEMPLATES => 'Шаблоны',
+        self::LK2_LOGS => 'Логи',
+        self::LK2_MACROS => 'Макросы',
+        self::LK2_ADMINS => 'Пользователи',
+        self::LK2_TASKS => 'Задачи',
+        self::LK2_CONFIRM_PAYMENTS => 'Подтверждение платежей',
+        self::LK2_MANGO => 'Манго',
+        self::LK2_EDIT_ADMIN_PHONES => 'Телефоны админов',
+        self::LK2_EDIT_ADMIN_EMAILS => 'Email админов',
+        self::LK2_EDIT_ADMIN_IPS => 'IP админов',
+        self::LK2_VIEW_LOG_IPS => 'Просмотр IP в логах',
     ];
 
     static $groups = [
@@ -215,7 +265,32 @@ class Rights
             self::IS_SUPERUSER,
         ],
         'LK2' => [
-            self::LK2_CRITICAL_PARTS,
+            LK2_REQUESTS,
+            LK2_CLIENTS,
+            LK2_GROUPS,
+            LK2_ABSTRACT_GROUPS,
+            LK2_PAYMENTS,
+            LK2_TEACHERS,
+            LK2_TESTS,
+            LK2_TESTS_CLIENTS,
+            LK2_CONTRACTS,
+            LK2_VISITS,
+            LK2_REVIEWS,
+            LK2_REPORTS,
+            LK2_STATS,
+            LK2_STATS_PAYMENTS,
+            LK2_DATES_AND_PRICES,
+            LK2_SMS_TEMPLATES,
+            LK2_LOGS,
+            LK2_MACROS,
+            LK2_ADMINS,
+            LK2_TASKS,
+            LK2_CONFIRM_PAYMENTS,
+            LK2_MANGO,
+            LK2_EDIT_ADMIN_PHONES,
+            LK2_EDIT_ADMIN_EMAILS,
+            LK2_EDIT_ADMIN_IPS,
+            LK2_VIEW_LOG_IPS,
         ],
     ];
 }
