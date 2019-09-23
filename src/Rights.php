@@ -107,6 +107,7 @@ class Rights
     const LK2_EDIT_ADMIN_EMAILS = 125;
     const LK2_EDIT_ADMIN_IPS = 126;
     const LK2_VIEW_LOG_IPS = 127;
+    const LK2_TOPICS = 128;
 
     static $all = [
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
@@ -196,6 +197,7 @@ class Rights
         self::LK2_EDIT_ADMIN_EMAILS => 'Email админов',
         self::LK2_EDIT_ADMIN_IPS => 'IP админов',
         self::LK2_VIEW_LOG_IPS => 'Просмотр IP в логах',
+        self::LK2_TOPICS => 'Модерация тем',
     ];
 
     static $groups = [
@@ -291,6 +293,7 @@ class Rights
             self::LK2_EDIT_ADMIN_EMAILS,
             self::LK2_EDIT_ADMIN_IPS,
             self::LK2_VIEW_LOG_IPS,
+            self::LK2_TOPICS,
         ],
     ];
 }
