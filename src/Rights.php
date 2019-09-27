@@ -109,6 +109,7 @@ class Rights
     const LK2_VIEW_LOG_IPS = 127;
     const LK2_TOPICS = 128;
     const LK2_TEACHER_PAYMENTS = 129;
+    const LK2_CLIENT_PAYMENTS = 130;
 
     static $all = [
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
@@ -200,6 +201,7 @@ class Rights
         self::LK2_VIEW_LOG_IPS => 'Просмотр IP в логах',
         self::LK2_TOPICS => 'Модерация тем',
         self::LK2_TEACHER_PAYMENTS => 'Оплата преподавателей',
+        self::LK2_CLIENT_PAYMENTS => 'Оплата клиентов',
     ];
 
     static $groups = [
@@ -297,6 +299,7 @@ class Rights
             self::LK2_VIEW_LOG_IPS,
             self::LK2_TOPICS,
             self::LK2_TEACHER_PAYMENTS,
+            self::LK2_CLIENT_PAYMENTS,
         ],
     ];
 }
