@@ -110,6 +110,7 @@ class Rights
     const LK2_TOPICS = 128;
     const LK2_TEACHER_PAYMENTS = 129;
     const LK2_CLIENT_PAYMENTS = 130;
+    const LK2_SECRET_SMS = 131;
 
     static $all = [
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
@@ -194,14 +195,15 @@ class Rights
         self::LK2_ADMINS => 'Пользователи',
         self::LK2_TASKS => 'Задачи',
         self::LK2_CONFIRM_PAYMENTS => 'Подтверждение платежей',
-        self::LK2_MANGO => 'Манго',
-        self::LK2_EDIT_ADMIN_PHONES => 'Телефоны админов',
-        self::LK2_EDIT_ADMIN_EMAILS => 'Email админов',
-        self::LK2_EDIT_ADMIN_IPS => 'IP админов',
+        self::LK2_MANGO => 'Уведомления о звонках',
+        self::LK2_EDIT_ADMIN_PHONES => 'Редактирование телефонов администраторов',
+        self::LK2_EDIT_ADMIN_EMAILS => 'Редактирование email администраторов',
+        self::LK2_EDIT_ADMIN_IPS => 'Редактирование IP администраторов',
         self::LK2_VIEW_LOG_IPS => 'Просмотр IP в логах',
         self::LK2_TOPICS => 'Модерация тем',
         self::LK2_TEACHER_PAYMENTS => 'Оплата преподавателей',
         self::LK2_CLIENT_PAYMENTS => 'Оплата клиентов',
+        self::LK2_SECRET_SMS => 'Просмотр секретных СМС',
     ];
 
     static $groups = [
@@ -293,13 +295,14 @@ class Rights
             self::LK2_TASKS,
             self::LK2_CONFIRM_PAYMENTS,
             self::LK2_MANGO,
-            self::LK2_EDIT_ADMIN_PHONES,
-            self::LK2_EDIT_ADMIN_EMAILS,
-            self::LK2_EDIT_ADMIN_IPS,
-            self::LK2_VIEW_LOG_IPS,
             self::LK2_TOPICS,
             self::LK2_TEACHER_PAYMENTS,
             self::LK2_CLIENT_PAYMENTS,
+            self::LK2_EDIT_ADMIN_IPS,
+            self::LK2_VIEW_LOG_IPS,
+            self::LK2_EDIT_ADMIN_PHONES,
+            self::LK2_EDIT_ADMIN_EMAILS,
+            self::LK2_SECRET_SMS,
         ],
     ];
 }
