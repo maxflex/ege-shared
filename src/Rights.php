@@ -112,6 +112,7 @@ class Rights
     const LK2_CLIENT_PAYMENTS = 130;
     const LK2_SECRET_SMS = 131;
     const LK2_SECRET_EMAIL = 132;
+    const LK2_STATS_LESSONS = 133;
 
     static $all = [
         self::EDIT_GROUPS              => 'редактирование групп и регулярного расписания',
@@ -206,6 +207,7 @@ class Rights
         self::LK2_CLIENT_PAYMENTS => 'Оплата клиентов',
         self::LK2_SECRET_SMS => 'Просмотр секретных СМС',
         self::LK2_SECRET_EMAIL => 'Просмотр секретных EMAIL',
+        self::LK2_STATS_LESSONS => 'Итоги по урокам',
     ];
 
     static $groups = [
@@ -306,6 +308,7 @@ class Rights
             self::LK2_EDIT_ADMIN_EMAILS,
             self::LK2_SECRET_SMS,
             self::LK2_SECRET_EMAIL,
+            self::LK2_STATS_LESSONS
         ],
     ];
 }
