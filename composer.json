@@ -1,5 +1,5 @@
 {
-   "name":"ege-shared",
+   "name":"maxflex/ege-shared",
    "minimum-stability": "dev",
    "autoload":{
       "psr-4":{
